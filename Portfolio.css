@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    margin: 15px 30px;
+    margin-right: 30px;
+    margin-left: 100px;
+    font-size: 17px;
+    background-color: #070220;
+}
+.logo{
+    margin-left: 0px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 2px 2px 3px;
+}
+nav{
+    display: flex;
+    margin-left: 0%;
+    background-color:  rgb(4, 1, 23);
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    font-size: 18px;
+    display: inline-block;
+    margin: 10px 20px;
+    list-style: none;
+}
+nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: aqua;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #00ffff;
+    color: azure;
+}
+h1{
+    font-size: 50px;
+    margin-top: 180px;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    color:  #ffffff;
+}
+h2{
+   font-weight: 100;
+    color: rgb(126, 190, 243);
+    text-shadow: rgb(0, 0, 0) 2px 2px 3px;
+}
+h3{
+    font-weight: 100;
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 40px;
+    
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 10px;
+    background: transparent;
+}
+.buttona a:hover::before{
+    z-index: -1;
+    background: aqua;
+    transition: .5s;
+}
+
+.button a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 150px;
+    background-color: aqua;
+    color: rgb(19, 5, 88);
+    font-size: 20px;
+    padding: 5px;
+    border: 3px solid aqua;
+    border-radius: 2%;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .5s;
+    z-index: 1;
+    overflow: hidden;
+}
+.button a:nth-child(2){
+    
+    text-shadow: none;
+    background: transparent;
+    color: aqua;
+}
+.button a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: black;
+    z-index: -1;
+    transition: .5s;
+}
+.button a:hover::before{
+    width: 100%;
+}
+.photo{
+    
+    padding-top: 50px;
+    border-radius: 50%;
+}
+.social{
+    padding-top: 70px;
+}
+.social i{
+   
+    padding-right: 30px;
+    
+}
+
+#education h1{ 
+    font-size: 40px;
+    padding: 10px;
+    position: relative;
+    color: aliceblue;
+    border: 2px solid aqua;
+    justify-content: space-around;
+}
+#education h3{
+    list-style: circle;
+    font-size: 25px;
+    color: aqua;
+    padding: 5px;
+
+}
+#education h5{
+    padding-left: 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+#about {
+    margin-right: 30px;
+}
+#education{
+    margin-right: 30px;
+}
+#con{
+    margin-right: 30px;
+}
+#about-content p{
+    text-align: justify;
+    display: inline-flex;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+#about-content ul li{
+    
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+}
+#con1{
+    margin-top: 40px;
+    font-size: 40px;
+    padding: 10px;
+    position: relative;
+    color: aliceblue;
+    border: 2px solid aqua;
+    justify-content: space-around;
+}
+#con{
+    font-size: 40px;
+    padding: 10px;
+    position: relative;
+    color: aliceblue;
+    border: 2px solid #00ffff;
+    justify-content: space-around;
+}
+#contact-left{
+    display: block;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #ffffff;
+}
+#contact-left i{
+    position: relative;
+    display: inline-flex;
+    
+    
+}
+#contact-right input,textarea{
+    
+    display: block;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px;
+    background-color:#1c1151;
+    width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    color: #ffffff;
+}
+#contact-right input[type="submit"]{
+    width: 30%;
+    background-color: aqua;
+    border-radius: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: 200;
+    padding: 10px;
+}
+#contact-right input[type="submit"]:hover{
+background-color: rgba(0, 255, 255, 0.541);
+}
+#contact{
+    margin-right: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 100px;
+    margin-top: 50px;
+}
+#me{
+    margin-right: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 100px;
+    margin-top: 50px;
+}
+#contact-logo{
+    font-size: 20px;
+
+}
+#contact-logo1{
+    font-size: 30px;
+    padding-top: 150px;
+    padding-right: 20px;
+}
+.cv{
+    position: relative;
+    text-decoration: none;
+    padding: 15px ;
+    text-align: center;
+    margin: 20px 10px;
+    border: 2px solid aqua;
+    background: transparent;
+    color:  aqua;
+    
+    cursor: pointer;
+    overflow: hidden;
+}
+span{
+    background: #1c1151;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: .5s;
+}
+.cv:hover span{
+    width: 100%;
+}
+
+#contact-right .form-input:hover{
+    border: 2px solid #00ffff;
+}
+#contact-right .form-input::placeholder{
+    color:white;
+}
+
