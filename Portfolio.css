@@ -9,7 +9,7 @@ body{
     padding: 10px;
     margin: 15px 30px;
     margin-right: 30px;
-    margin-left: 100px;
+    margin-left: 70px;
     font-size: 17px;
     background-color: #070220;
 }
@@ -21,7 +21,7 @@ body{
 }
 nav{
     display: flex;
-    margin-left: 0%;
+    margin-left: 0px;
     background-color:  rgb(4, 1, 23);
     overflow: hidden;
     align-items: center;
@@ -282,14 +282,42 @@ span{
 
 /*------css for small screens------*/
 
-@media only screen and (max-width:600px){
+@media (max-width:600px){
+    body{
+        margin-left: 10px;
+        margin-right: 5px;
+    }
     #about-content{
         font-size: 10px;
     }
     #contact-left{
         font-size: 10px;
     }
+    .logo{
+    font-size: 10px;
+    }
+    
+    nav ul li{
+        margin: 5px 5px;
+        font-size: 10px;
+    }
+    #home h1{
+        margin-top: 80px;
+        font-size: 40px;
+    }
+    #home  h2 h3{
+        font-size: 20px;
+    }
+    .button a{
+        font-size: 10px;
+        width: 100px;
+        height: 50px;
+    }
+    .photo{
+       width: 200px;
+    }
     .cv{
         width: 10px;
+        padding: 5px;
     }
 }
